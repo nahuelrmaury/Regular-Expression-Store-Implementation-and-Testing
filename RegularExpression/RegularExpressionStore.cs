@@ -57,7 +57,19 @@ namespace RegularExpression
         // the method should return a collection of field names from the xml input
         public static IEnumerable<string> Method4(string inputXml)
         {
-            throw new NotImplementedException();
+            List<string> fieldNames = new List<string>();
+
+            Regex regex = new Regex("<(\\w+)[^>]*>");
+
+            MatchCollection matches = regex.Matches(inputXml);
+
+            foreach (Match match in matches)
+            {
+                string fieldName = match.Groups[1].Value;
+                fieldNames.Add(fieldName);
+            }
+
+            return fieldNames;
         }
 
         // the method should return a collection of field values from the input xml
