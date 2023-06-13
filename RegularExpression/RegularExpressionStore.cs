@@ -23,62 +23,35 @@ namespace RegularExpression
         {
             List<string> fieldNames = new List<string>();
 
-            JsonDocument jsonDoc = JsonDocument.Parse(inputJson);
+            Regex regex = new Regex("\"(\\w+)\":");
 
-            /* traverse the JSON document recursively */
-            TraverseJsonElement(jsonDoc.RootElement, fieldNames);
+            MatchCollection matches = regex.Matches(inputJson);
+
+            foreach (Match match in matches)
+            {
+                string fieldName = match.Groups[1].Value;
+                fieldNames.Add(fieldName);
+            }
 
             return fieldNames;
-        }
-
-        private static void TraverseJsonElement(JsonElement element, List<string> fieldNames)
-        {
-            if (element.ValueKind == JsonValueKind.Object)
-            {
-                foreach (JsonProperty property in element.EnumerateObject())
-                {
-                    fieldNames.Add(property.Name);
-
-                    TraverseJsonElement(property.Value, fieldNames);
-                }
-            }
         }
 
         // the method should return a collection of field values from the json input
         public static IEnumerable<string> Method3(string inputJson)
         {
-            var fieldValues = new List<string>();
+            List<string> fieldValues = new List<string>();
 
-            JsonDocumentOptions options = new JsonDocumentOptions
+            Regex regex = new Regex(":\\s*\"?(.*?[^\\\\])\"?(?:,|}|$)");
+
+            MatchCollection matches = regex.Matches(inputJson);
+
+            foreach (Match match in matches)
             {
-                AllowTrailingCommas = true
-            };
-
-            JsonDocument jsonDoc = JsonDocument.Parse(inputJson, options);
-
-            TraverseJson(jsonDoc.RootElement, fieldValues);
+                string fieldValue = match.Groups[1].Value;
+                fieldValues.Add(fieldValue);
+            }
 
             return fieldValues;
-        }
-
-        private static void TraverseJson(JsonElement element, List<string> fieldValues)
-        {
-            if (element.ValueKind == JsonValueKind.Object)
-            {
-                foreach (var property in element.EnumerateObject())
-                    TraverseJson(property.Value, fieldValues);
-            }
-            else
-            {
-                if (element.ValueKind == JsonValueKind.Null)
-                    fieldValues.Add("null");
-
-                else if (element.ValueKind == JsonValueKind.True)
-                    fieldValues.Add("true");
-
-                else
-                    fieldValues.Add(element.ToString());
-            }
         }
 
         // the method should return a collection of field names from the xml input

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dGHPFh5+QhwPEZfp/K1iYkV0NJhFPh+riPfaJobCa7GkYGNh187tLQpMqYMKu/l0S8Vtu4ZRdRwTd2y/x7wLsQ==",
+  "dgSpecHash": "C6T9tiSYTaW41C/P0CzADBR4Km+olvsMvAb576dpaJtyOkmXNLzbEPfarAB9VQNeYHlLDXvAYTFk+pZJ2QB9rQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression.Test\\RegularExpression.Test.csproj",
+  "projectFilePath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression.Test\\RegularExpression.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nahue\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\nahue\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression.Test\\RegularExpression.Test.csproj": {}
+    "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression.Test\\RegularExpression.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression.Test\\RegularExpression.Test.csproj": {
+    "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression.Test\\RegularExpression.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression.Test\\RegularExpression.Test.csproj",
+        "projectUniqueName": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression.Test\\RegularExpression.Test.csproj",
         "projectName": "RegularExpression.Test",
-        "projectPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression.Test\\RegularExpression.Test.csproj",
+        "projectPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression.Test\\RegularExpression.Test.csproj",
         "packagesPath": "C:\\Users\\nahue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression.Test\\obj\\",
+        "outputPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nahue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression\\RegularExpression.Task.csproj": {
-                "projectPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression\\RegularExpression.Task.csproj"
+              "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj": {
+                "projectPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression\\RegularExpression.Task.csproj": {
+    "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression\\RegularExpression.Task.csproj",
+        "projectUniqueName": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj",
         "projectName": "RegularExpression.Task",
-        "projectPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression\\RegularExpression.Task.csproj",
+        "projectPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj",
         "packagesPath": "C:\\Users\\nahue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\RegularExpression\\RegularExpression\\obj\\",
+        "outputPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nahue\\AppData\\Roaming\\NuGet\\NuGet.Config",
