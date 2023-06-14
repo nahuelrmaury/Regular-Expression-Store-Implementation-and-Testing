@@ -78,7 +78,20 @@ namespace RegularExpression
         // omit null values
         public static IEnumerable<string> Method5(string inputXml)
         {
-            throw new NotImplementedException();
+            string pattern = @"(?<=>)[^<>]+(?=<)";
+            Regex regex = new Regex(pattern);
+
+            MatchCollection matches = regex.Matches(inputXml);
+
+            List<string> fieldNames = new List<string>();
+
+            foreach (Match match in matches)
+            {
+                string fieldName = match.Value;
+                fieldNames.Add(fieldName);
+            }
+
+            return fieldNames;
         }
 
         // read from the input string and return Ukrainian phone numbers written in the formats of 0671234567 | +380671234567 | (067)1234567 | (067) - 123 - 45 - 67
