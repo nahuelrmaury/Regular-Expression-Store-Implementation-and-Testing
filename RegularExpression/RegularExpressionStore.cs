@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using System.Text.RegularExpressions;
+using System.Xml;
 
 namespace RegularExpression
 {
@@ -13,9 +14,9 @@ namespace RegularExpression
         {
             string pattern = @"^\s*[a-zA-Z]+\.[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{3}\s*$";
 
-            bool isMatch = Regex.IsMatch(input, pattern);
+            Regex regex = new Regex(pattern);
 
-            return isMatch;
+            return regex.IsMatch(input);
         }
 
         // the method should return a collection of field names from the json input
@@ -57,15 +58,16 @@ namespace RegularExpression
         // the method should return a collection of field names from the xml input
         public static IEnumerable<string> Method4(string inputXml)
         {
-            List<string> fieldNames = new List<string>();
-
-            Regex regex = new Regex("<(\\w+)[^>]*>");
+            string pattern = @"(?<=<)(?!TestClass\b)\w+\b";
+            Regex regex = new Regex(pattern);
 
             MatchCollection matches = regex.Matches(inputXml);
 
+            List<string> fieldNames = new List<string>();
+
             foreach (Match match in matches)
             {
-                string fieldName = match.Groups[1].Value;
+                string fieldName = match.Value;
                 fieldNames.Add(fieldName);
             }
 

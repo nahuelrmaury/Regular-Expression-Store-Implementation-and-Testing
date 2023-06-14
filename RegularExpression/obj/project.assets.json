@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj",
+      "projectUniqueName": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International\\Lecture 16 (Regex)\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj",
       "projectName": "RegularExpression.Task",
-      "projectPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj",
+      "projectPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International\\Lecture 16 (Regex)\\ti-task13-regex\\RegularExpression\\RegularExpression.Task.csproj",
       "packagesPath": "C:\\Users\\nahue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International Tasks\\ti-task13-regex\\RegularExpression\\obj\\",
+      "outputPath": "C:\\Users\\nahue\\OneDrive\\Escritorio\\Team International\\Lecture 16 (Regex)\\ti-task13-regex\\RegularExpression\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nahue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
