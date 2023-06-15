@@ -40,9 +40,10 @@ namespace RegularExpression
         // the method should return a collection of field values from the json input
         public static IEnumerable<string> Method3(string inputJson)
         {
-            List<string> fieldValues = new List<string>();
 
             Regex regex = new Regex(":\\s*\"?(.*?[^\\\\])\"?(?:,|}|$)");
+
+            List<string> fieldValues = new List<string>();
 
             MatchCollection matches = regex.Matches(inputJson);
 
@@ -101,7 +102,28 @@ namespace RegularExpression
         // numbers can be separated by symbols , | ; /
         public static IEnumerable<string> Method6(string input)
         {
-            throw new NotImplementedException();
+            string[] numbers = Regex.Split(input, @"[,|;/]");
+
+            string pattern = @"^(?:\+38|\(067\)|067|068|095|38)(?!\d{8}$).*";
+
+            Regex regex = new Regex(pattern);
+
+            List<string> phoneNumbers = new List<string>();
+
+            foreach (string number in numbers)
+            {
+                if (regex.IsMatch(number.Trim()))
+                {
+                    string formattedNumber = number.Trim();
+                    if (formattedNumber.StartsWith("38"))
+                    {
+                        formattedNumber = "+" + formattedNumber;
+                    }
+                    phoneNumbers.Add(formattedNumber);
+                }
+            }
+
+            return phoneNumbers;
         }
     }
 }
