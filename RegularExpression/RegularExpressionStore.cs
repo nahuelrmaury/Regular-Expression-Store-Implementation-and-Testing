@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-using System.Text.RegularExpressions;
-using System.Xml;
+﻿using System.Text.RegularExpressions;
 
 namespace RegularExpression
 {
@@ -24,7 +22,9 @@ namespace RegularExpression
         {
             List<string> fieldNames = new List<string>();
 
-            Regex regex = new Regex("\"(\\w+)\":");
+            string pattern = @"""(\w+)"":";
+
+            Regex regex = new Regex(pattern);
 
             MatchCollection matches = regex.Matches(inputJson);
 
@@ -41,7 +41,9 @@ namespace RegularExpression
         public static IEnumerable<string> Method3(string inputJson)
         {
 
-            Regex regex = new Regex(":\\s*\"?(.*?[^\\\\])\"?(?:,|}|$)");
+            string pattern = @":\s*""?(.*?[^\\])""?(?:,|}|$)";
+
+            Regex regex = new Regex(pattern);
 
             List<string> fieldValues = new List<string>();
 
@@ -60,6 +62,7 @@ namespace RegularExpression
         public static IEnumerable<string> Method4(string inputXml)
         {
             string pattern = @"(?<=<)(?!TestClass\b)\w+\b";
+
             Regex regex = new Regex(pattern);
 
             MatchCollection matches = regex.Matches(inputXml);
@@ -80,6 +83,7 @@ namespace RegularExpression
         public static IEnumerable<string> Method5(string inputXml)
         {
             string pattern = @"(?<=>)[^<>]+(?=<)";
+
             Regex regex = new Regex(pattern);
 
             MatchCollection matches = regex.Matches(inputXml);
